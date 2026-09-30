@@ -5,7 +5,7 @@ Summarize English YouTube videos using a pre-trained Hugging Face summarization 
 ## How it works
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Streamlit app / Client notebook<br/>on your laptop] -- POST /summarize --> B[ngrok public URL]
     B --> C[FastAPI server<br/>Kaggle notebook - CPU]
     C --> D[Fetch transcript<br/>youtube-transcript-api]
