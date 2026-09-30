@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 import streamlit.components.v1 as components
 
-API_URL = "https://rehab-unpopular-recast.ngrok-free.dev/summarize"   # لينك Ngrok بتاع السيرفر
+API_URL = "https://rehab-unpopular-recast.ngrok-free.dev/summarize"   
 API_KEY = "secret123"
 
 st.title("🎬 YouTube Video Summarizer")
