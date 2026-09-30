@@ -6,13 +6,13 @@ Summarize English YouTube videos using a pre-trained Hugging Face summarization 
 
 ```mermaid
 flowchart TD
-    A[Streamlit app / Client notebook<br/>on your laptop] -- POST /summarize --> B[ngrok public URL]
+    A[Streamlit app or<br/>client notebook<br/>on your laptop] -- POST /summarize --> B[ngrok public URL]
     B --> C[FastAPI server<br/>Kaggle notebook - CPU]
     C --> D[Fetch transcript<br/>youtube-transcript-api]
     D --> E[Clean text]
     E --> F[Chunk by tokens]
-    F --> G[Summarize each chunk - Map]
-    G --> H[Combine into final summary - Reduce]
+    F --> G[Summarize each chunk<br/>Map]
+    G --> H[Combine into final summary<br/>Reduce]
     H -- JSON response --> A
 ```
 
